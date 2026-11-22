@@ -15,7 +15,6 @@ export default function Hero() {
           <h1 className="hero-name">
             <span>Shantia</span>
             <span className="gradient-text">Eslami</span>
-            <span className="sr-only">شنتیا اسلامی</span>
           </h1>
 
           <p className="hero-subtitle">
@@ -83,7 +82,7 @@ export default function Hero() {
                 src="/assets/images/mybot-320.webp"
                 srcSet="/assets/images/mybot-160.webp 160w, /assets/images/mybot-320.webp 320w, /assets/images/mybot-480.webp 480w"
                 sizes="(max-width: 640px) 130px, 154px"
-                alt="Avatar illustration of Shantia Eslami (شنتیا اسلامی)"
+                alt="Avatar illustration of Shantia Eslami"
                 width="154"
                 height="154"
                 fetchPriority="high"

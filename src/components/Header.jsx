@@ -76,7 +76,7 @@ export default function Header() {
         <a
           href="/#home"
           className="brand"
-          aria-label="Shantia Eslami (شنتیا اسلامی) home"
+          aria-label="Shantia Eslami home"
           onClick={(e) => handleNavClick(e, "home")}
         >
           <span className="brand-mark">SE</span>

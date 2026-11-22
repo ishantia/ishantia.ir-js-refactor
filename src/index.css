@@ -830,14 +830,6 @@ body.light-theme .terminal {
   line-height: 1.6;
 }
 
-.profile-fa-sub {
-  margin: 4px 0 16px !important;
-  color: var(--cyan) !important;
-  font-family: var(--font-main);
-  font-size: 0.88rem !important;
-  font-weight: 600;
-}
-
 .availability {
   display: grid;
   gap: 12px;
