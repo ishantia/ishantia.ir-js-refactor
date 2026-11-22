@@ -39,6 +39,8 @@ export default function App() {
               </Suspense>
             }
           />
+          {/* Catch-all fallback so unexpected paths or /index.html never render empty */}
+          <Route path="*" element={<HomePage />} />
         </Routes>
       </main>
       <Footer />

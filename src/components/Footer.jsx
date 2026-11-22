@@ -11,7 +11,7 @@ export default function Footer() {
           <span className="footer-title">Shantia Eslami</span>
         </div>
         <p className="footer-copy">
-          &copy; {currentYear} Shantia Eslami. Built with React &amp; Vite &bull; Ultra-optimized.
+          &copy; {currentYear} Shantia Eslami (شنتیا اسلامی) &bull; Built with React &amp; Vite &bull; Ultra-optimized.
         </p>
         <div className="footer-links">
           <a

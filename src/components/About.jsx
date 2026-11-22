@@ -40,7 +40,7 @@ export default function About() {
               src="/assets/images/mybot-160.webp"
               srcSet="/assets/images/mybot-160.webp 160w, /assets/images/mybot-320.webp 320w"
               sizes="96px"
-              alt="Avatar illustration of Shantia Eslami"
+              alt="Avatar illustration of Shantia Eslami (شنتیا اسلامی)"
               width="96"
               height="96"
               loading="lazy"
@@ -49,6 +49,7 @@ export default function About() {
             <span className="profile-badge-dot" title="Active developer"></span>
           </div>
           <h2>Student. Developer. Builder.</h2>
+          <p className="profile-fa-sub">شنتیا اسلامی &bull; توسعه‌دهنده نرم‌افزار</p>
           <p>
             Focused on practical code, AI model pipelines, creative hardware experiments, and continuous craft improvement.
           </p>
