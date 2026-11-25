@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#070a0d" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
-    
+
     <!-- Primary Title (Clean English) -->
     <title>Shantia Eslami - Portfolio | Developer &amp; AI Builder</title>
-    
+
     <link rel="canonical" href="https://ishantia.ir/" />
     <link rel="icon" type="image/webp" href="/assets/images/mybot-160.webp" />
     <link rel="apple-touch-icon" href="/assets/images/mybot-160.webp" />
-    
+
     <!-- Primary Meta Tags (English & Persian for search indexing) -->
     <meta
       name="description"
@@ -26,7 +26,7 @@
     <meta name="author" content="Shantia Eslami" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="google-site-verification" content="jP8WfjgqcuWdUKcHf2yG7rcwRJIDOaTLQKLYTgtL0GE" />
-    
+
     <!-- Open Graph / Facebook / Telegram SEO -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Shantia Eslami" />
@@ -129,26 +129,27 @@
       />
     </noscript>
 
-    <!-- Immediate theme prevention flash -->
+    <!-- Prevent theme & language flash before hydration -->
     <script>
       (function () {
         try {
-          var t = localStorage.getItem("theme");
-          if (t === "light") {
-            document.documentElement.classList.add("light-theme");
+          var theme = localStorage.getItem("ishantia-theme");
+          var root = document.documentElement;
+          if (theme === "light") {
+            root.classList.remove("dark");
+            root.classList.add("light");
+          } else {
+            root.classList.remove("light");
+            root.classList.add("dark");
+          }
+          var lang = localStorage.getItem("ishantia-lang");
+          if (lang === "fa") {
+            root.lang = "fa";
+            root.dir = "rtl";
           }
         } catch (e) {}
       })();
     </script>
-
-    <noscript>
-      <style>
-        .reveal {
-          opacity: 1 !important;
-          transform: none !important;
-        }
-      </style>
-    </noscript>
     <script>
       // Single Page Apps for GitHub Pages
       (function () {
@@ -167,7 +168,7 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

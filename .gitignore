@@ -1,4 +1,20 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
 node_modules
+
+# Build output
 dist
-.DS_Store
+dist-ssr
 *.local
+
+# Editor & OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
